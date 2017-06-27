@@ -16,7 +16,7 @@
 
     <target name="jar" depends="compile">
         <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/hdpexamples2.jar" basedir="build/classes">
+        <jar destfile="build/jar/hdpexamples.jar" basedir="build/classes">
             <manifest>
                 <attribute name="Main-Class" value="com.cloudxlab.charcount.StubCCDriver"/>
             </manifest>
@@ -30,12 +30,12 @@
 
 	<target name="hiveudfjar" depends="hiveudfcompile">
         <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/hdpexamples2.jar" basedir="build/classes">
+        <jar destfile="build/jar/hdpexamples.jar" basedir="build/classes">
         </jar>
     </target>
 
     <target name="run">
-        <java jar="build/jar/hdpexamples2.jar" fork="true"/>
+        <java jar="build/jar/hdpexamples.jar" fork="true"/>
     </target>
 
 </project>
