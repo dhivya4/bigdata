@@ -22,7 +22,7 @@ public static void main(String[] args) throws Exception
 {
   
   JobConf conf = new JobConf();
-  Job job = new Job(conf,"RajWordCount")
+  Job job = new Job(conf,"RajWordCount");
   
   job.setJarByClass(rajwordcount.class);
   job.setMapperClass(rajwordmapper.class);
