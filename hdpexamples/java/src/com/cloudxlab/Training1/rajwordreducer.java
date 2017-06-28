@@ -7,7 +7,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class rajwordreducer extends reducer<Text, LongWritable, Text, LongWritable>
+public class rajwordreducer extends Reducer<Text, LongWritable, Text, LongWritable>
 throws IOException, InterruptedException
 {
 public void reduce(Text key, Iterable <LongWritable> values, Context context)
