@@ -18,7 +18,7 @@ for(LongWritable iw:values)
  sum = sum + iw.get()
 }
 
-context.write(key,new LongWritable(sum))
+context.write(key, new LongWritable(sum))
 
 }
 
