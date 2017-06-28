@@ -6,7 +6,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public rajwordmapper extends Mapper<Object,Text,Text,LongWritable>
+public class rajwordmapper extends Mapper<Object,Text,Text,LongWritable>
 {
 public void mapper(LongWritable key, Text value, Context context)
 {
