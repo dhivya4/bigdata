@@ -31,8 +31,8 @@ public static void main(String[] args) throws Exception
   job.setOutputKeyClass(Text.class);
   job.setOutputValueClass(LongWritable.class);
 
-  FileInputFormat.addInputPath(job,new Path(args[1]));
-  FileOutputFormat.setOutputPath(job,new Path(args[2]));
+  FileInputFormat.addInputPath(job,new Path(args[0]));
+  FileOutputFormat.setOutputPath(job,new Path(args[1]));
   
   boolean result = job.waitForCompletion(true);
   System.exit(result ? 0 : 1);
