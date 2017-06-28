@@ -15,10 +15,10 @@ public void reduce(Text key, Iterable <LongWritable> values, Context context)
 Long sum = 0;
 for(LongWritable iw:values)
 {
- sum = sum + iw.get()
+ sum = sum + iw.get();
 }
 
-context.write(key, new LongWritable(sum))
+context.write(key, new LongWritable(sum));
 
 }
 
