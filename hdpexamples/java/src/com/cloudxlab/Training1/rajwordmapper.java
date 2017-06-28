@@ -1,4 +1,4 @@
-package com.cloudxlab.wordcount;
+package com.cloudxlab.Training1;
 
 import java.io.IOException;
 
