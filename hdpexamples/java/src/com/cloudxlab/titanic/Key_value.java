@@ -1,3 +1,4 @@
+package com.cloudxlab.titanic;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
