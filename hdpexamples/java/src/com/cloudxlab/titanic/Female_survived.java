@@ -18,11 +18,14 @@ import com.cloudxlab.customreader.NLinesInputFormat;
 public class Female_survived {
 
 
-public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
+public static void main(String[] args) throws Exception {
  
-Configuration conf=new Configuration();
+//Configuration conf=new Configuration();
+//Job job=new Job();
+
+JobConf conf = new JobConf();
+Job job = new Job(conf, "titanicjob"); 
  
-Job job=new Job();
  
 job.setJarByClass(Female_survived.class);
  
