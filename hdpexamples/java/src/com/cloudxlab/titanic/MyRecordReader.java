@@ -1,3 +1,4 @@
+package com.cloudxlab.titanic;
 import java.io.IOException;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
