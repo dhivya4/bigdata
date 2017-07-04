@@ -6,7 +6,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public static class Map extends Mapper<Key_value, Text, Key_value, IntWritable> {
+public class Map extends Mapper<Key_value, Text, Key_value, IntWritable> {
  
 private final static IntWritable one = new IntWritable(1);
  
