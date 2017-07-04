@@ -1,5 +1,5 @@
 
-package com.cloudxlab.wordcount;
+package com.cloudxlab.titanic;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.ArrayWritable;
